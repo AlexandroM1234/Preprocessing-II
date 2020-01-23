@@ -17,22 +17,38 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        .mobile-fix;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width:100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile{
+          .mobile-fix();
+          border-radius: 20px;
+        }
       }
     }
+
+    @media @mobile{
+      .small-screen(column);
+    }
+
   }
 
   .inverse-content {
@@ -42,11 +58,19 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile{
+        .mobile-fix();
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+
+    @media @mobile{
+      .small-screen(column-reverse);
     }
   }
 
