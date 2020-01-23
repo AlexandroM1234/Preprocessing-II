@@ -1,5 +1,18 @@
 // Navigation Styles here
 
+.mobile-top{
+    display: none;
+
+    @media @mobile{
+        display:flex;
+        padding:2vh 0;
+        justify-content: center;
+        align-self: center;
+        font-family: @head-font;
+    }
+  }
+
+
 nav{
     display: flex;
     width: 100%;
@@ -9,6 +22,10 @@ nav{
 
     h1{
         font-family: @head-font;
+
+        @media @mobile{
+            display: none;
+        }
     }
 
     .nav-anchors{
@@ -19,6 +36,15 @@ nav{
         width: 25%;
         justify-content: space-evenly;
         font-family: @text-font;
+
+        @media @mobile{
+            width: 100%;
+            margin:0;
+            padding: 0;
+            justify-content: space-around;
+            align-items:center;
+        
+        }
     }
 
 }
