@@ -1,6 +1,6 @@
 // Mixins in here
 
-.custom-btn(@bg-color,@font-color,@width){
+.custom-btn(@bg-color,@font-color,@width){ //makes custom buttons
 
     display: block;
     background-color: @bg-color;
@@ -11,7 +11,7 @@
 
 }
 
-.small-screen(@direction){
+.small-screen(@direction){ //mix in to make content a columnn for mobile
     flex-direction: @direction;
     width: 100%;
     justify-content: center;
@@ -21,7 +21,7 @@
     padding-left:3% ;
 }
 
-.mobile-fix(){
+.mobile-fix(){ //fixes images and text in mobile
     width: 100%;
     padding: 0 2%;
 }
