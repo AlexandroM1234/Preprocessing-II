@@ -168,6 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  padding: 2% 0;
+  justify-content: flex-start;
+  border-bottom: #C0C0C0 dashed 2px;
+}
+nav h1 {
+  text-align: left;
+  font-family: 'Indie Flower', cursive;
+}
+nav .nav-anchors {
+  margin-left: 30% ;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-around;
+  font-family: 'Roboto', sans-serif;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
