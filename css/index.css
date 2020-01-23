@@ -170,7 +170,7 @@ img {
 }
 nav {
   display: flex;
-  padding: 2% 0;
+  padding: 2vh 0;
   justify-content: flex-start;
   border-bottom: #C0C0C0 dashed 2px;
 }
@@ -196,6 +196,10 @@ nav .nav-anchors {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header .cta {
+  margin: 2vh 0 ;
+  border-bottom: #C0C0C0 dashed 2px;
 }
 .home .content-section {
   margin: 30px 0;
